@@ -1,18 +1,6 @@
 import styled from "styled-components"
 
-type Props = {
-    background_num?: number;
-    funcao?: number;
-};
-
-// if ((props: { background_num: number; }) => (props.background_num > 5)){
-
-// }
-
-/* background-color: ${(props) => (props.background_num> 5 ? 'orange' : 'blue')}; */
-
-
-export const Home = styled.div<Props>`
+export const Home = styled.div`
     @import url('https://fonts.googleapis.com/css2?family=Exo:wght@200;400;600;800&display=swap');
     font-family: 'Exo', sans-serif;
     
