@@ -1,6 +1,5 @@
 import React from 'react';
 import { Home } from './styles';
-// import { ReactComponent as Perfil } from '../../assets/imagens/daocu.svg'
 import { AiFillGithub, AiFillLinkedin, AiOutlineInstagram } from "react-icons/ai";
 import perfil from '../../assets/imagens/daocu.jpeg'
 import { IconContext } from 'react-icons/lib';
@@ -8,7 +7,7 @@ import { IconContext } from 'react-icons/lib';
 function index() {
     return (
         <>
-            <Home background_num={10}>
+            <Home>
                 <div>
                     <h1>Olá! Me chamo <span>Raul Barra</span></h1>
                     <h2>E sou <span>Desenvolvedor Front-end</span></h2>
