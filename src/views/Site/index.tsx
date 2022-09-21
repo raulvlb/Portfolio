@@ -2,7 +2,8 @@ import React from 'react';
 import Home from '../../components/Home/';
 import NavBar from '../../components/NavBar/';
 
-function App() {
+function index() {
+
   return (
     <div className="App">
       <NavBar />
@@ -11,4 +12,4 @@ function App() {
   );
 }
 
-export default App;
+export default index;

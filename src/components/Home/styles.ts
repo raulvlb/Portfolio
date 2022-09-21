@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 export const Home = styled.div`
-    /* @import url('https://fonts.googleapis.com/css2?family=Exo:wght@200;400;600;800&display=swap'); */
     font-family: 'Exo', sans-serif;
     
     background-color: #f1faee;
