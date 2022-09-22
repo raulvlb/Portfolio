@@ -4,8 +4,7 @@ export const Home = styled.div`
     font-family: 'Exo', sans-serif;
     
     background-color: #f1faee;
-    margin: 0px;
-    padding: 5% 5% 5% 5%;
+    padding: 10% 5% 5% 5%;
     display: flex;
     justify-content: space-around;
     h1{
@@ -58,9 +57,10 @@ export const Home = styled.div`
     }
 
     img{
-        z-index: 9999;
+        z-index: 10;
         border-radius: 50%;
-        width: 65%;
+        width: 365px;
+        height: 365px;
     }
     /* BOTÕES */
     .butons{

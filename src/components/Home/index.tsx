@@ -1,7 +1,7 @@
 import React from 'react';
 import { Home } from './styles';
 import { AiFillGithub, AiFillLinkedin, AiOutlineInstagram } from "react-icons/ai";
-import perfil from '../../assets/imagens/daocu.jpeg'
+import perfil from '../../assets/imagens/perfil.jpeg'
 import { IconContext } from 'react-icons/lib';
 
 function index() {

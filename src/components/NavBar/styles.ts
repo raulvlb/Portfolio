@@ -11,15 +11,19 @@ export const NavBar = styled.div<Props>`
     justify-content: space-between;
     align-items: center;
     margin: 0px;
-    padding: 0px 5% 0px 5%;
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    z-index: 9999;
     h1{
         color: #e63946;
-        margin: 0px;
+        margin: 0px 0px 0px 5vw;
         padding: 0px;
         font-weight: 800;
     }
     ul{
         display: flex;
+        margin: 0px 5vw 0px 0px;
     }
     li{
         list-style: none;
