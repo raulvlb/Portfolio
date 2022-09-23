@@ -16,7 +16,7 @@ export function Repo(){
         
         if (previousRepos){
             const nextRepos = previousRepos.map(repo => {
-                if (`repos/${repo.full_name}` === currentRepository){
+                if (`repos/${repo.name}` === currentRepository){
                     
                     return {...repo, description: 'Testando'}
                 } else{

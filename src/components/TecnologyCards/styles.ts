@@ -1,9 +1,8 @@
 import styled from "styled-components"
 
 export const TecnologyCard = styled.div`
+    font-family: 'Exo', sans-serif;
     background-color: #f1faee;
-    
-    //border-bottom: solid 5px #f1faee; 
     border-radius: 20px;
     text-align: center;
     margin: 20px;
