@@ -6,7 +6,7 @@ import { IconContext } from 'react-icons/lib';
 
 function index() {
     return (
-        <>
+        <div id='home'>
             <Home>
                 <div>
                     <h1>Olá! Me chamo <span>Raul Barra</span></h1>
@@ -14,8 +14,8 @@ function index() {
                     <p>Atualmente desenvolvendo aplicações <span>front-end para web</span> 
                         <br/>utilizando tecnologias como <span>React (+frameworks)</span></p>
                     <div className='butons'>
-                        <button className='projetos'>Meus Projetos</button>
-                        <button className='sobre'>Mais Sobre Mim</button>
+                        <a href="/#repos"><button className='projetos'>Meus Projetos</button></a>
+                        <a href="/#sobre"><button className='sobre'>Mais Sobre Mim</button></a>
                     </div>
                 </div>
                 <div className='perfil-img'>
@@ -25,21 +25,27 @@ function index() {
                 </div>
                 <div className='icons'>
                     <IconContext.Provider value={{ className: 'react-icons' }}>
+                        <a href={'https://github.com/raulvlb'} target="_blank" style={{ textDecoration: 'none' }}>
                         <IconContext.Provider value={{ className: 'react-icons-github' }}>
                             <AiFillGithub />
                         </IconContext.Provider>
+                        </a>
 
+                        <a href={'https://www.linkedin.com/in/raulbarra/'} target="_blank" style={{ textDecoration: 'none' }}>
                         <IconContext.Provider value={{ className: 'react-icons-linkedin' }}>
                             <AiFillLinkedin />
                         </IconContext.Provider>
+                        </a>
 
+                        <a href={'https://www.instagram.com/raulvlb/'} target="_blank" style={{ textDecoration: 'none' }}> 
                         <IconContext.Provider value={{ className: 'react-icons-instagram' }}>
                             <AiOutlineInstagram />
-                        </IconContext.Provider>        
+                        </IconContext.Provider>
+                        </a>        
                     </IconContext.Provider>
                 </div>
             </Home>
-        </>
+        </div>
     );
 }
 

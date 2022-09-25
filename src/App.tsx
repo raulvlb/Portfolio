@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Site from './views/Site';
-import { Repos } from "./views/Repos";
+import { Repos } from "./components/Repos";
 import { Repo } from './views/Repo';
 
 function App() {

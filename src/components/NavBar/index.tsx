@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { NavBar } from './styles';
 
 let nome:string;
@@ -8,14 +9,14 @@ function index() {
     return (
         <>
             <NavBar>
-                <h1>{nome}</h1>
+                <a href="/#home"><h1>{nome}</h1></a>
                 <nav>
                     <ul>
-                        <li>HOME</li>
-                        <li>SOBRE</li>
-                        <li>HABILIDADES</li>
-                        <li>PROJETOS</li>
-                        <li>CONTATO</li>
+                        <a href="/#home">HOME</a>
+                        <a href="/#sobre">SOBRE</a>
+                        <a href="/#habilidades">HABILIDADES</a>
+                        <a href="/#repos">PROJETOS</a>                    
+                        <a href="/#contatos">CONTATO</a>
                     </ul>
                 </nav>
             </NavBar>
