@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import Home from '../../components/Home';
-import NavBar from '../../components/NavBar';
 import { useQuery } from 'react-query';
 import axios from 'axios';
 import { resolve } from 'node:path/win32';
@@ -54,7 +52,7 @@ export function Repos() {
   const cartaoRepo = document.getElementById("card");
 
   function prev() {
-    setCounter(300) // 0.2 seconds
+    setCounter(500) // 0.5 seconds
     if (cartaoRepo){
       cartaoRepo.style.transform = "translate(-30%, 0px) "
     }
@@ -66,7 +64,7 @@ export function Repos() {
   }
 
   function next() {
-    setCounter(300) // 0.2 seconds
+    setCounter(500) // 0.5 seconds
     if (cartaoRepo){
       cartaoRepo.style.transform = "translate(30%, 0px) "
     }
