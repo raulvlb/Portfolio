@@ -76,7 +76,7 @@ export function Repos() {
   }
 
   return (
-    <div className="App" id='repos'>
+    <div className="App" id='projetos'>
       <RepoHeader>
         <h1>Meus <span>Projetos</span>.</h1>
         <p>Abaixo estão alguns repositorios de projetos que desenvolvi ao longo da minha caminhada como programador</p>

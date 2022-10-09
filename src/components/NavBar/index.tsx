@@ -2,21 +2,28 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { NavBar } from './styles';
 
-let nome:string;
-nome = '<Raul />'
+let nome:string = '<Raul />';
+
+const navLinks = ["home", "sobre", "habilidades", "projetos", "contatos"]
+
 
 function index() {
-    return (
+    
+    function navBarLink(item: string){
+        document.getElementById(item)?.scrollIntoView({ behavior: "smooth" })
+    }
+
+    return ( 
         <>
             <NavBar>
                 <a href="/#home"><h1>{nome}</h1></a>
                 <nav>
                     <ul>
-                        <a href="/#home">HOME</a>
-                        <a href="/#sobre">SOBRE</a>
-                        <a href="/#habilidades">HABILIDADES</a>
-                        <a href="/#repos">PROJETOS</a>                    
-                        <a href="/#contatos">CONTATO</a>
+                        {navLinks.map(item => {
+                            return(
+                                <a onClick={() => navBarLink(item)}>{item.toLocaleUpperCase()}</a>
+                            )
+                        })}
                     </ul>
                 </nav>
             </NavBar>

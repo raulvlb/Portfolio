@@ -5,6 +5,11 @@ import perfil from '../../assets/imagens/perfil.jpeg'
 import { IconContext } from 'react-icons/lib';
 
 function index() {
+
+    function projetosLink(){
+        document.getElementById('projetos')?.scrollIntoView({ behavior: "smooth" })
+    }
+
     return (
         <div id='home'>
             <Home>
@@ -14,7 +19,7 @@ function index() {
                     <p>Atualmente desenvolvendo aplicações <span>front-end para web</span> 
                         <br/>utilizando tecnologias como <span>React (+frameworks)</span></p>
                     <div className='butons'>
-                        <a href="/#repos"><button className='projetos'>Meus Projetos</button></a>
+                        <a onClick={() => projetosLink()}><button className='projetos'>Meus Projetos</button></a>
                         <a href="/#sobre"><button className='sobre'>Mais Sobre Mim</button></a>
                     </div>
                 </div>

@@ -34,7 +34,7 @@ export const NavBar = styled.div<Props>`
             color: #212529;
             font-weight: 600;
             border-bottom: solid 0.1px #e5e5e5;
-            transition: all 0.5s ease;
+            transition: transform 0.5s ease;
         }
         a:hover{
             color: #e63946;

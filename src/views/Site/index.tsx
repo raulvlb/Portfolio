@@ -3,6 +3,7 @@ import NavBar from '../../components/NavBar/';
 import Habilidades from '../../components/Habilidades/'
 import { Repos } from '../../components/Repos';
 import { Site } from './styles';
+import "./style.css"
 
 function index() {
   window.document.title = "Portfólio - Raul Barra";
